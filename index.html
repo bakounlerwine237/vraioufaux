@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VraiOuFaux - La réponse avant l'info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vrai<span>Ou</span>Faux</h1>
+        <p>La réponse avant l'info.</p>
+    </header>
+
+    <main>
+        <section id="question-section">
+            <h2>Pose ta question</h2>
+            <form id="question-form">
+                <input type="text" id="question-input" placeholder="Ex: Est-il vrai que le café empêche de dormir ?" required>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <section id="questions-list">
+            <h2>Questions de la communauté</h2>
+            <div id="questions-container">
+                <!-- Les questions s'afficheront ici -->
+                <p class="empty-state">Sois le premier à poser une question !</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 VraiOuFaux. Fait avec un téléphone et Termux.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
